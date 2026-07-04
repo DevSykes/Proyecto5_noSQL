@@ -1,0 +1,28 @@
+{
+  "name": "proyecto5_nosql",
+  "version": "1.0.0",
+  "description": "Proyecto 5 Máster - noSQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevSykes/Proyecto5_noSQL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DevSykes/Proyecto5_noSQL/issues"
+  },
+  "homepage": "https://github.com/DevSykes/Proyecto5_noSQL#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
