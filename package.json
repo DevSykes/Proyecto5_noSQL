@@ -4,14 +4,21 @@
   "description": "Proyecto 5 Máster - noSQL",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DevSykes/Proyecto5_noSQL.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "project",
+    "noSQL",
+    "MongoDB",
+    "Express"
+  ],
+  "author": "Sara Z.",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
