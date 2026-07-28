@@ -1,12 +1,16 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-const connectdb = async () => {
-  try {
-    await mongoose.connect("mongodb://localhost/movies-api");
-    console.log("Conexión a la base de datos establecida");
-  } catch (error) {
-    console.error("Error al conectar a la base de datos:", error);
-  }
+const urlDb = 'mongodb://localhost:27017/movies-api';
+
+const connect = async () => {
+    try {
+        await mongoose.connect(urlDb, { useNewUrlParser: true, useUnifiedTopology: true });
+        console.log(`Connected with db successfully`);
+    } catch (error) {
+        console.log('Error to connect with db', error);
+    }
 };
 
-module.exports = connectdb;
+module.exports = {
+    connect
+};
