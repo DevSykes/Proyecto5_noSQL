@@ -16,13 +16,13 @@ server.use(express.urlencoded({ extended: true }));
 server.use("/movies", movieRoutes);
 
 // rutas no encontradas (404)
-server.use("*", (req, res, next) => {
+server.use((req, res, next) => {
   const error = new Error("Ruta no encontrada");
   error.status = 404;
   return next(error);
 });
 
-// Control general de errores (500)
+// control general de errores (500)
 server.use((err, req, res, next) => {
   return res
     .status(err.status || 500)
